@@ -1,0 +1,150 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Paragraph on Click</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       .container{
+        height: 30vh;
+        width: 50vw;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        margin: 0 auto;
+        padding: 40px;
+       }
+       .plus{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+       .heading{
+        cursor: pointer;
+       }
+
+       .paragraph{
+        display: none;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4 class="heading">THERE IS SOMETHING FOR THAT IT ALSO CALLS SOME OTHER THING <i class="plus fas fa-plus"></i></h4>
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime iure delectus laboriosam, vitae labore laudantium officia omnis, enim aliquam cum iusto fugit temporibus facere, iste aperiam distinctio! Aliquid, eum obcaecati asperiores ipsam? Repellendus.</p>
+    </div>
+    <script>
+         document.addEventListener('DOMContentLoaded' ,() =>{
+            const head = document.querySelector('.heading')
+            const para = document.querySelector('.paragraph')
+            const plus = head.querySelector('.plus')
+
+            head.addEventListener('click' , ()=>{
+                if(para.style.display === 'block'){
+                    para.style.display = 'none'
+                    plus.classList.remove("fa-minus")
+                    plus.classList.add("fa-plus")
+
+                }else{
+                    para.style.display = 'block'
+                    plus.classList.remove("fa-plus")
+                    plus.classList.add("fa-minus")
+                }
+
+            });
+
+
+         });
+       
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Paragraph on Click</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       .container{
+        height: 30vh;
+        width: 50vw;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        margin: 0 auto;
+        padding: 40px;
+       }
+       .plus{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+       .heading{
+        cursor: pointer;
+       }
+
+       .paragraph{
+        display: none;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4 class="heading">THERE IS SOMETHING FOR THAT IT ALSO CALLS SOME OTHER THING <i class="plus fas fa-chevron-down"></i></h4>
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime iure delectus laboriosam, vitae labore laudantium officia omnis, enim aliquam cum iusto fugit temporibus facere, iste aperiam distinctio! Aliquid, eum obcaecati asperiores ipsam? Repellendus.</p>
+    </div>
+    <script>
+         document.addEventListener('DOMContentLoaded' ,() =>{
+            const head = document.querySelector('.heading')
+            const para = document.querySelector('.paragraph')
+            const plus = head.querySelector('.plus')
+
+            head.addEventListener('click' , ()=>{
+                if(para.style.display === 'block'){
+                    para.style.display = 'none'
+                    plus.classList.remove("fa-chevron-up")
+                    plus.classList.add("fa-chevron-down")
+
+                }else{
+                    para.style.display = 'block'
+                    plus.classList.remove("fa-chevron-down")
+                    plus.classList.add("fa-chevron-up")
+                }
+
+            });
+
+
+         });
+       
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

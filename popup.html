@@ -1,0 +1,135 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<style>
+.popup{
+    height: 25vh;
+    width: 20vw;
+    background: #ffffff;
+    top: 50%;
+    left: 50%; 
+    display:none;
+    position: relative;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+
+
+}
+.success{
+    text-align: center;
+    color: green;
+    padding-top: 20px;
+
+}
+.okbtn{
+    background: #ff0000;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 10px;
+    font-size: 13px;
+    margin-top: 30px;
+    cursor: pointer;
+   
+}
+.add{
+    background: #fa940e;
+    cursor: pointer;
+}
+.buy{
+    background: #ffee07;
+    cursor: pointer;
+}
+.buypopup{
+    height: 25vh;
+    width: 20vw;
+    background: #ffffff;
+    top: 50%;
+    left: 50%; 
+    display:none;
+    position: relative;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+
+
+}
+#cross{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    color: gray;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.purchase{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 65%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background: #009c00;
+    padding: 10px 15px;
+}
+</style>
+
+</head>
+<body>
+
+    <p>T-Shiets for mens</p>
+    <p>Price: $7.99</p>
+
+     <div>
+        <button id="add" class="add"  >Add to Cart </button>
+        <button id="buy" class="buy" > Buy Now </button>
+      </div>
+
+<div  id="popup" class="popup" >
+    <p class="success">Successfully Added!</p>
+    <button id="okbtn" class="okbtn">ok</button>
+</div>
+
+<div  id="buypopup" class="buypopup" >
+    <p class="purchase">Purchased</p>
+    <i class="fas fa-times" id="cross" ></i>
+</div>
+
+      <script>
+ const add = document.getElementById("add")
+ const popup = document.getElementById ("popup")
+ const okbtn = document.getElementById("okbtn")
+ const buy = document.getElementById("buy")
+
+add.onclick = function(){
+popup.style.display = 'block'
+}
+okbtn.onclick = function(){
+    popup.style.display = 'none'
+}
+buy.onclick = function (){
+buypopup.style.display = 'block'
+}
+cross.onclick = function(){
+    buypopup.style.display = 'none'
+}
+      </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
