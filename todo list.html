@@ -3,120 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>Document</title>
+
     <style>
-        /* Optional: Basic styling */
-        .todo-container {
-            margin-top: 20px;
-        }
+
+
+
     </style>
 </head>
 <body>
-    <h1>To-Do List</h1>
-    <input class="js-cls" type="text" placeholder="Enter a new to-do">
-    <button onclick="my()">Add To-Do</button>
-    <div class="todo-container"></div>
-
-    <script>
-        let todo = [];
-        
-        function renderTodoList() {
-            let todoHTML = '';
-            for (let x = 0; x < todo.length; x++) {
-                const aro = todo[x];
-                const html = `<p>${aro}</p>`;  // Use template literals to include variables
-                todoHTML += html;
-            }
-            document.querySelector('.todo-container').innerHTML = todoHTML;
-        }
-        
-        function my() {
-            const aro = document.querySelector('.js-cls');  // Get the input element
-            let auto = aro.value.trim();  // Get the value of the input field and trim whitespace
-            if (auto !== '') {  // Ensure the input is not empty
-                todo.push(auto);  // Add the value to the todo array
-                aro.value = '';  // Clear the input field
-                renderTodoList();  // Update the displayed to-do list
-            }
-        }
-
-        // Initial render of the to-do list
-        renderTodoList();
-    </script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<p> to calculate the todo list for something else</p>
-<input type="text" name="" id="" placeholder="Add todo list" class="js-cls">
-<button onclick="my();">Add</button>
+    
+    <input type="text" name="" id="" class="js-cls" placeholder="add todo list">
+    <button onclick="myAdd()">Add</button>
+    <div class="js-todo"></div>
 
 <script>
 
-//     let todo = [];
-//    function my(){
-//    const aro = document.querySelector('.js-cls');
-//    let auto = aro.value;
-//   todo.push(aro);
-//   console.log(todo);
-//   aro.value = '';
-//   }
-
-
-
-let todo = ['wash','some'];
-let todoHTML ='';
-
-for(x=0 ; x< todo.length; x++){
-    const aro = todo[x];
-    const html = <p> ${aro}</p>
-    todoHTML += html ;
+    let inside =[];
+function render(){
+    let insideHTML = '';
+    for(let x =0 ; x < inside.length; x++)
+{
+    const insideElement = inside[x];
+    const html = `<p> ${insideElement}</p>`;
+    insideHTML += html;
+          
 }
-console.log(todoHTML)
+document.querySelector('.js-todo').innerHTML = insideHTML; 
 
-function my() {
-   const aro = document.querySelector('.js-cls');  // Get the input element
-   let auto = aro.value;  // Get the value of the input field
-   todo.push(auto);  // Add the value to the todo array
-   console.log(todo);  // Print the todo array to the console
-   aro.value = '';  // Clear the input field
 }
 
+
+
+    function myAdd(){
+        let  insideElement = document.querySelector('.js-cls');
+         let inside2 = insideElement.value;
+
+         if (inside2 !== ''){
+        inside.push(inside2);
+        insideElement.value = '';
+        render();
+
+         }
+
+        }
+
+document.querySelector(`.js-cls`).addEventListener('keypress' ,function(event){
+    if(event.key === 'Enter'){
+        myAdd();
+    }
+});
 </script>
-
 </body>
 </html>
- -->
